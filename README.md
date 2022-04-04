@@ -1,4 +1,6 @@
 
+[![npm version](https://badge.fury.io/js/class-validate-helper.svg)](https://www.npmjs.com/package/class-validate-helper)
+
 # class-validate-helper
 
 ## Installation
