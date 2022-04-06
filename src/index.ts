@@ -4,7 +4,7 @@ import "reflect-metadata";
 
 export function Validate() {
     const validateParamIndex = 0;
-    return function (target: any, propertyName: string, descriptor: TypedPropertyDescriptor<(...args: any[]) => Promise<void>>) {
+    return function (target: any, propertyName: string, descriptor: TypedPropertyDescriptor<(...args: any[]) => any>) {
         let originalMethod = descriptor.value;
         descriptor.value = async function (...args: any[]) {
             const ParamTypes = Reflect.getMetadata('design:paramtypes', target, propertyName);
