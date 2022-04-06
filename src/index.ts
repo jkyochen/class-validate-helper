@@ -20,7 +20,7 @@ export function Validate() {
             if (!originalMethod) {
                 return;
             }
-            originalMethod.apply(this, args);
+            return originalMethod.apply(this, args);
         };
     };
 }
