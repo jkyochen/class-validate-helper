@@ -11,3 +11,15 @@ npm install reflect-metadata class-validator class-transformer --save
 # install class-validate-helper
 npm install class-validate-helper --save
 ```
+
+## Example Auto Validate
+
+```ts
+class TestValidate {
+
+    @Validate()
+    async getUser(user?: User) {
+    }
+
+}
+```
